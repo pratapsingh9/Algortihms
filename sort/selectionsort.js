@@ -18,7 +18,21 @@ const SelectSort = (array) => {
       }
     }
     return array;
-  };
+}
 
+const SelectionSorts = (array) => {
+    for(let i =0 ; i<array.length ; i++) {
+        let min = i;
+        for(let j = i+1; j<array.length ; j++) {
+            if(array[min]>array[j]) {
+                min = j;
+            }
+        }
+        if(min!==i) {
+            [array[i] , array[min]] = [array[min] , array[i]]
+        }
+    }
+    return array;
+}
 
-console.log(SelectSort(array));
+console.log(SelectionSorts(array));

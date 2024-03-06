@@ -1,6 +1,45 @@
 {
-    "workbench.colorCustomizations": {
-        "minimap.background": "#00000000",
-        "scrollbar.shadow": "#00000000"
-    }
+  "editor.fontFamily": "'Fira Code iScript','Cascadia Code SemiLight', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": true,
+  "editor.fontSize": 20,
+  "editor.lineNumbers": "off",
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "reactSnippets.settings.importReactOnTop": false,
+  "editor.cursorBlinking": "expand",
+  "editor.find.cursorMoveOnType": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.env.windows": {},
+  "git.autofetch": true,
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "Best Themes - Material High Contrast No Italic",
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "window.zoomLevel": 1,
+  "workbench.activityBar.location": "side",
+  "workbench.colorCustomizations": {
+    "minimap.background": "#00000000",
+    "scrollbar.shadow": "#00000000"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.REPL.enableREPLSmartSend": false,
+  "python.testing.pytestArgs": ["."],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }

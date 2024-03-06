@@ -13,4 +13,6 @@ const LinearSearch = (array , target) => {
     }
 }
 
+
+console.log
 console.log(LinearSearch(array ,50));

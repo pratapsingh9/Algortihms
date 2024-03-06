@@ -39,6 +39,13 @@ const IsArraySorted = (array, index) => {
   return IsArraySorted(array, index + 1);
 };
 
+const stairs = (num) => {
+  if (num == 0 || num == 1) {
+    return 1;
+  } else {
+    return stairs(num - 1) + stairs(num - 2);
+  }
+};
 const PrintIncreasing = (num, taregt) => {
   if (num > taregt) {
     return;
@@ -54,9 +61,7 @@ const FindSum = (num) => {
   }
   return num + FindSum(num - 1);
 };
-// // PrintDeccreasing(8);
 
-//find last occureneccence of index in the array
 const LastOccurence = (arr, key, index) => {
   let length = arr.length;
   if (arr.length - 1 === 0) {
@@ -102,7 +107,29 @@ const FindDuplicaton = (n) => {
   if (n <= 1) {
     return 1;
   }
-  return FindDuplicaton(n - 1)  + (n-1) * FindDuplicaton(n-2);
+  return FindDuplicaton(n - 1) + (n - 1) * FindDuplicaton(n - 2);
 };
 
-console.log(FindDuplicaton(4));
+const revernumbers = (n) => {
+  let revernumbers = 0;
+  while (n != 0) {
+    revernumbers = revernumbers * 10 + (n % 10);
+    n = Math.floor(n / 10);
+  }
+  return revernumbers;
+};
+// console.log(FindDuplicaton(4));
+
+const learyearcheck = (array, length, index) => {
+  if (index > length) {
+    return `operation done properly`;
+  }
+  if (array[index] % 2 === 0) {
+    console.log(array[index]);
+    return learyearcheck(array, length, index + 1);
+  }
+};
+const asn = [1, 2, 3, 4, 5, 6, 34, 7, 8, 9, 0, 4, 46, 54, 59, 4165, 419, 49];
+let answer = [];
+console.log(asn.length)
+console.log(learyearcheck(asn, asn.length, answer, 0));

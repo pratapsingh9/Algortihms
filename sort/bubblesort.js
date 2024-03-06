@@ -1,3 +1,4 @@
+const { MiddlewareNotFoundError } = require("next/dist/shared/lib/utils");
 
 const array = [3,6,2,1,8,7,4,5,3,1];
 
@@ -33,3 +34,8 @@ const bubblesortdecesending = (array) => {
 
 console.log(bubblesortdecesending(array));
 console.log(BubbleSortAccesnding(array));
+
+
+module.exports = {
+    BubbleSortAccesnding
+}

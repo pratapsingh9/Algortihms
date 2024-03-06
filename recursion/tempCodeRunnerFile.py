@@ -1,0 +1,2 @@
+
+        print(array[i])

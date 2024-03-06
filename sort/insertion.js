@@ -42,8 +42,5 @@ const insetionSortDescending = (array) => {
     return array;
 }
 
-const array = [50,500,150,200];
-console.log(InsertionSorting(array));
-console.log(insetionSort(array));
 
 

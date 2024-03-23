@@ -47,4 +47,18 @@ const printdigits = (num, target) => {
   }
 };
 
-console.log(printdigits(10));
+// console.log(printdigits(10));
+
+
+const findrange = (n,target,callstack=[]) => {
+  if (n >  target ) {
+    return [callstack,target]
+  }
+  else{
+    callstack.push(n)
+    return findrange(n+1,target, callstack)
+  }
+}
+
+
+console.log(findrange(10,100,))

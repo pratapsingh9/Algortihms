@@ -10,10 +10,25 @@ const insetionSort = (array) => {
     }
     return array
 }
-const array1 = [10,5,6,6,9,5,6]
 
-console.log(insetionSort(array1));
+const insetionsorts = (arrays) => {
+    const length = arrays.length
+    for(let index=0;index<length;index++ ) {
+        let currentindex = index;
+        let previousIndex = currentindex-1;
+        while(previousIndex >= 0 && arrays[currentindex] > arrays[previousIndex]) {
+            arrays[previousIndex+1] = arrays[previousIndex]
+            previousIndex--
+        }
+        arrays[previousIndex+1] = arrays[currentindex]
+    }
+    return arrays
+}
+// const DesiInsertionSort = )=
 
+const arrays = [0,345,35,35035,305,35353,50345,35345,345];
+
+console.log(insetionsorts(arrays))
 
 const InsertionSorting = (array) =>{
     const length = array.length;
@@ -28,7 +43,6 @@ const InsertionSorting = (array) =>{
     }
     return array;
 }
-console.log(InsertionSorting(array1));
 const insetionSortDescending = (array) => {
     for (let index = 0; index < array.length; index++) {
         let currenindex = array[index];

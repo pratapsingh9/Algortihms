@@ -1,4 +1,4 @@
-const { BubbleSortAccesnding } = require("./sort/bubblesort");
+const { BubbleSortAccesnding } = require("../sort/bubblesort");
 const FindMixMax = (array) => {
   const len = array.length;
   BubbleSortAccesnding(array);
@@ -73,5 +73,8 @@ const findsort = (array,index=0,secondindex=index+1) => {
     return false;
   }
 }
+
+
+
 
 console.log(findsort(arrays))

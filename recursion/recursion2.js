@@ -1,5 +1,4 @@
 
-
 const checkPalindorme = (string, start = 0) => {
   if (string === "") {
     return false;
@@ -14,6 +13,8 @@ const checkPalindorme = (string, start = 0) => {
   }
 };
 
+// const rebui
+
 const SwiperString = (string, start = 0, end = -1) => {
   if (start >= end) {
     return;
@@ -22,21 +23,19 @@ const SwiperString = (string, start = 0, end = -1) => {
     console.log(string);
     return SwiperString(start, start + 1, end);
   }
+}
+
+const randomPassword = () => {
+  let password = Math.random().toString().slice(2) + Math.random().toString(36).toUpperCase().slice();
+  return password
+}
+const generaterandompassword = (length) => {
+  let password =
+    Math.random().length(length).toString().slice(2) +
+    Math.random().toUpperCase().length(length);
 };
 
-function randomPassword() {
-	console.log(
-		Math.random().toString(36).slice(2) +
-		Math.random().toString(36)
-		.toUpperCase().slice(2));
-}
-
-const generaterandompassword = (length) => {
-  let password = Math.random().length(length).toString().slice(2) + Math.random().toUpperCase().length(length)
-}
-
 randomPassword();
-
 
 const stringLength = (str) => {
   if (str === "") {
@@ -46,10 +45,19 @@ const stringLength = (str) => {
   }
 };
 
-const print = func => console.log(func)
+const print = (func) => console.log(func);
 
+const findmaxadjacents = (array) => {
+  let include = 0;
+  let exclude = 0;
+  for (let i = 0; i < array.length; i++) {
+    let newexclude = Math.max(include, exclude);
+    include = exclude + array[i];
+    exclude = newexclude;
+  }8
+  return Math.max(include, exclude);
+};
 
-print(stringLength("checknumber123"))
+const answer = findmaxadjacents([0,67,8,5,4,3])
 
-print(randompasswordgenerator(15))
-
+console.log(answer)
